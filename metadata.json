@@ -1,0 +1,6 @@
+{
+  "name": "奶龙西方名画艺术鉴赏馆",
+  "description": "沉浸式西方艺术流派与名画二改鉴赏平台，涵盖中世纪、文艺复兴、巴洛克、浪漫主义、印象派及现代艺术，支持原作与二改对照鉴赏、技法解析与素材管理。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

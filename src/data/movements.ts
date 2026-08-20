@@ -1,0 +1,102 @@
+import { ArtMovement } from '../types';
+
+export const ART_MOVEMENTS: ArtMovement[] = [
+  {
+    id: 'all',
+    name: '全部流派总览',
+    nameEn: 'Complete Panorama',
+    eraRange: '公元500年 — 20世纪中叶',
+    shortDesc: '横跨千年西方艺术长河，从神圣中世纪到先锋现代主义的全景二改鉴赏。',
+    fullDesc: '汇聚西方艺术史中最具代表性的各个历史时期与艺术流派，通过当代二创解构古典审美，在诙谐幽默中窥见艺术史的脉络演变。',
+    accentColor: '#d4af37',
+    bgGradient: 'from-amber-900/30 via-neutral-900/60 to-black',
+    keyMasters: ['达芬奇', '米开朗基罗', '伦勃朗', '德拉克罗瓦', '莫奈', '蒙克'],
+    keyTraits: ['跨时代对比', '流派技法演进', '解构与重塑', '审美脉络'],
+    philosophicalContext: '艺术史不仅是技法的演化，更是人类对神性、理性、情感与自我存在认知的反复探索。',
+    icon: 'Sparkles'
+  },
+  {
+    id: 'medieval',
+    name: '中世纪艺术',
+    nameEn: 'Medieval & Gothic Art',
+    eraRange: '约 500 – 1400 年',
+    shortDesc: '金色圣光与神圣符号，扁平庄严的蛋彩画与哥特式神秘宗教色彩。',
+    fullDesc: '中世纪艺术主要服务于基督宗教信仰，强调神圣性与来世超越。画面以金箔背景、拜占庭式金色圣圈、拉长的人物比例和平面化造型为特征，追求精神的纯粹而非肉眼的真实。',
+    accentColor: '#c59b27',
+    bgGradient: 'from-amber-950/40 via-stone-900/60 to-black',
+    keyMasters: ['乔托 (Giotto)', '杜乔 (Duccio)', '西莫内·马蒂尼'],
+    keyTraits: ['金箔背景', '神圣光环', '扁平二维构图', '象征主义比例', '庄严肃穆'],
+    philosophicalContext: '神本位世界观：艺术是通往彼岸神圣天国的视觉祈祷文。',
+    icon: 'Sun'
+  },
+  {
+    id: 'renaissance',
+    name: '文艺复兴',
+    nameEn: 'The Renaissance',
+    eraRange: '约 1400 – 1600 年',
+    shortDesc: '人文主义觉醒，严谨透视法、解剖学与优雅古典比例的黄金时代。',
+    fullDesc: '文艺复兴是对古希腊罗马古典文明的复兴与人文主义的颂扬。艺术家们将科学观察、几何透视（单点透视法）和人体解剖学引入绘画，达·芬奇的渐隐晕涂法、米开朗基罗的雄浑雕塑感与拉斐尔的和谐构图达到古典美学巅峰。',
+    accentColor: '#b87333',
+    bgGradient: 'from-orange-950/40 via-stone-900/60 to-black',
+    keyMasters: ['达·芬奇', '米开朗基罗', '拉斐尔', '提香', '扬·凡·艾克'],
+    keyTraits: ['单点透视法', '渐隐晕涂法 (Sfumato)', '金字塔三角构图', '人体解剖真实感', '古典和谐'],
+    philosophicalContext: '人是万物的尺度：从神圣超越转向现世人的尊严与理智探索。',
+    icon: 'Compass'
+  },
+  {
+    id: 'baroque_rococo',
+    name: '巴洛克与洛可可',
+    nameEn: 'Baroque & Rococo',
+    eraRange: '约 1600 – 1789 年',
+    shortDesc: '强烈的明暗戏剧光影、激昂动势与洛可可华丽精致的宫廷奢靡美学。',
+    fullDesc: '巴洛克艺术诞生于反宗教改革与绝对君权时代，以卡拉瓦乔与伦勃朗开创的强烈明暗对照法（Chiaroscuro）、对角线剧烈动势及丰沛情感著称；随后演变为洛可可风格，转向法国宫廷的轻快、柔美与粉嫩浪漫。',
+    accentColor: '#93532b',
+    bgGradient: 'from-yellow-950/40 via-neutral-900/60 to-black',
+    keyMasters: ['卡拉瓦乔', '伦勃朗', '维米尔', '圭多·雷尼 (Guido Reni)', '提香 (Titian)'],
+    keyTraits: ['明暗对照法 (Chiaroscuro)', '舞台聚光灯效果', '戏剧化动势', '洛可可曲线与粉调', '华丽奢靡'],
+    philosophicalContext: '剧场化世界观：生命如壮丽戏剧，充满激情、神秘张力与感官沉醉。',
+    icon: 'Crown'
+  },
+  {
+    id: 'romanticism_neoclassic',
+    name: '新古典与浪漫主义',
+    nameEn: 'Neoclassicism & Romanticism',
+    eraRange: '约 1780 – 1850 年',
+    shortDesc: '理性庄严的历史英雄史诗，与狂放热烈、崇高狂野的自由情感宣泄。',
+    fullDesc: '新古典主义崇尚古罗马式的庄严、理性与崇高秩序（大卫）；浪漫主义则反叛理性的冷酷，崇尚个体意志、革命激情与壮丽大自然的压迫感（德拉克罗瓦《自由引导人民》、籍里柯《梅杜萨之筏》）。',
+    accentColor: '#9e2a2b',
+    bgGradient: 'from-red-950/40 via-stone-900/60 to-black',
+    keyMasters: ['德拉克罗瓦', '雅克·路易·大卫', '安东尼奥·卡诺瓦 (Canova)', '古斯塔夫·多雷 (Doré)', '籍里柯'],
+    keyTraits: ['革命与史诗', '崇高感 (The Sublime)', '强烈情感共鸣', '英雄主义', '色彩狂想'],
+    philosophicalContext: '自由意志与崇高激情：突破理性框架，释放人内心深处最奔涌的热血。',
+    icon: 'Flame'
+  },
+  {
+    id: 'impressionism',
+    name: '印象派与后印象派',
+    nameEn: 'Impressionism & Post-Impressionism',
+    eraRange: '约 1860 – 1905 年',
+    shortDesc: '捕捉瞬息万变的光与色彩，摆脱写实形体，开启纯粹主观情绪与点彩。',
+    fullDesc: '印象派走出画室在户外写生，打破传统固有色观念，捕捉瞬间光影与空气颤动（莫奈）；后印象派（梵高、塞尚、高更）则进一步超越表象，用激昂旋转的笔触和主观色彩表达内在灵魂世界。',
+    accentColor: '#2b7a78',
+    bgGradient: 'from-teal-950/40 via-stone-900/60 to-black',
+    keyMasters: ['克劳德·莫奈', '文森特·梵高', '保罗·塞尚', '乔治·修拉', '德加'],
+    keyTraits: ['户外写生', '光影瞬变', '碎笔与厚涂 (Impasto)', '点彩技法', '情感色彩爆发'],
+    philosophicalContext: '视网膜革命与心灵直觉：世界不是它原本的样子，而是光穿过眼睛留在灵魂里的印记。',
+    icon: 'Palette'
+  },
+  {
+    id: 'modern_expressionism',
+    name: '现代与表现主义',
+    nameEn: 'Modernism & Expressionism',
+    eraRange: '约 1890 – 1950 年',
+    shortDesc: '扭曲造型直击现代焦虑，立体解构与超现实主义的潜意识梦境。',
+    fullDesc: '面对工业化与战争冲击，现代主义彻底颠覆写实传统。表现主义以扭曲夸张的线条与色彩宣泄内心的恐惧与焦虑（蒙克《呐喊》）；立体派解构多维视角（毕加索）；超现实主义探索潜意识与梦境（达利）。',
+    accentColor: '#8338ec',
+    bgGradient: 'from-purple-950/40 via-stone-900/60 to-black',
+    keyMasters: ['爱德华·蒙克', '巴勃罗·毕加索', '萨尔瓦多·达利', '亨利·马蒂斯', '康定斯基'],
+    keyTraits: ['形体扭曲变形', '心理焦虑具象化', '多维时空解构', '梦境与潜意识', '大胆纯色'],
+    philosophicalContext: '存在主义危机：在破碎的世界中重新定义人的精神现实与深层自我。',
+    icon: 'Zap'
+  }
+];

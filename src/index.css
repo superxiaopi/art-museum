@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dark-gold-bg: #0b1c15;
+    --dark-gold-surface: #10261d;
+    --dark-gold-card: #142a20;
+    --dark-gold-card-hover: #1c362a;
+    --dark-gold-border: #4d3d1f;
+    --dark-gold-border-bright: #c59b27;
+    --dark-gold-text-main: #fbf5e8;
+    --dark-gold-text-muted: #b5a995;
+    --dark-gold-accent: #ffd966;
+    --dark-gold-glow: #ffe580;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--dark-gold-text-main);
+    background-color: #0b1a13;
+  }
+  
+  .font-serif-sc {
+    font-family: 'Noto Serif SC', 'Songti SC', SimSun, Georgia, serif;
+  }
+  
+  .font-display {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+}
+
+/* Vintage Emerald & Gold Noir Damask Texture matching reference */
+.dark-gold-texture {
+  background-color: #0b1b14;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(20, 56, 38, 0.45) 0%, transparent 70%),
+    radial-gradient(ellipse at 15% 100%, rgba(168, 128, 32, 0.2) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 100%, rgba(168, 128, 32, 0.2) 0%, transparent 60%),
+    radial-gradient(rgba(45, 68, 48, 0.4) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+  background-attachment: fixed;
+}
+
+/* Dark Emerald & Velvet Card with Burnished Gilded Borders */
+.dark-gold-card {
+  background: linear-gradient(145deg, #13271d 0%, #0d1e16 100%);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.7),
+    0 0 15px rgba(197, 155, 39, 0.1),
+    inset 0 1px 1px rgba(255, 235, 179, 0.15);
+}
+
+.gilded-border {
+  border: 1px solid rgba(197, 155, 39, 0.5);
+  box-shadow: 
+    0 0 0 1px rgba(13, 30, 22, 0.8),
+    0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.gilded-gold-glow {
+  text-shadow: 0 0 16px rgba(245, 206, 98, 0.4);
+}
+
+/* Classical Museum Frame in Dark Gold */
+.classical-frame-dark {
+  position: relative;
+  border: 2px solid #c59b27;
+  outline: 1px solid rgba(245, 206, 98, 0.3);
+  outline-offset: -5px;
+  box-shadow: 
+    0 16px 36px -8px rgba(0, 0, 0, 0.9),
+    0 0 20px rgba(197, 155, 39, 0.15),
+    inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom art gallery scrollbar with gilded accents */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1610;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #47381a;
+  border-radius: 9999px;
+  border: 1px solid #7d6026;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94712c;
+}
